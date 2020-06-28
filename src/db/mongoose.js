@@ -1,3 +1,3 @@
 const mongoose=require('mongoose')
-var connectionURL='mongodb://127.0.0.1:27017/paste-bin'
+var connectionURL=process.env.MONGO_URL
 mongoose.connect(connectionURL,{ useNewUrlParser: true,useCreateIndex:true})
